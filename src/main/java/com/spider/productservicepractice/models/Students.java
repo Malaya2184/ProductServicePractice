@@ -2,18 +2,19 @@ package com.spider.productservicepractice.models;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import lombok.*;
 
 @Getter
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
+@ToString
 @Entity
-public class Category {
+public class Students {
+
     @Id
-    private long id;
-    private String title;
+    private Long studentId;
+    private String firstName;
+    private String lastName;
+    private String dateOfBirth;
 }
